@@ -5,9 +5,9 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 
 # Load model and scaler
-model = load_model(r"C:\\Users\\reddy\\Downloads\\autoencoder_model.h5", compile=False)
+model = load_model(r"autoencoder_model.h5", compile=False)
 scaler = MinMaxScaler()
-scaler.min_, scaler.scale_ = np.load("C:\\Users\\reddy\\Downloads\\scaler_params.npy", allow_pickle=True)
+scaler.min_, scaler.scale_ = np.load("scaler_params.npy", allow_pickle=True)
 
 st.title("🧠 Anomaly Detection with Autoencoder")
 
